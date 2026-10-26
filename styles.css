@@ -641,3 +641,47 @@ body {
 .add-button:hover {
   background-color: #223929;
 }
+.section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px; 
+  overflow: hidden;
+  padding: 0px 23px 50px 23px;
+  background-color: #faf7ee;
+}
+.discounts-container {
+  background-color: #223929;
+  padding: 40px;
+  border-radius: 12px; 
+   border: 1px solid #e3decb;
+   height: 249px; 
+   
+}
+.notifications {
+  border: 1px solid #e3decb;
+  padding: 40px;
+  border-radius: 12px; 
+   height: 249px; 
+}
+.discounts-content-1 {
+  background-color: #F2B705;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 4px 10px;
+  width: fit-content;
+  border-radius: 999px;
+  color: #223929;
+}
+.discounts-content-2 > h2{
+  font-family: "Source Serif 4", serif;
+  font-size: 27px;
+  font-weight: 400;
+  padding-top: 10px;
+  color: #fff;
+}
+.discounts-content-2 > p {
+  font-size: 13px;
+  color: #B9C4B7;
+  padding-top: 10px;
+  font-weight: 400;
+}
