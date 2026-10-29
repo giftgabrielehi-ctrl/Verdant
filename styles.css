@@ -748,37 +748,6 @@ body {
   padding: 10px 22px;
   border-radius: 10px;
 }
- /* .notification-scan {
-  display: grid;
-  /* gap: 10px;
-  padding-top: 20px; */
-  /* justify-content: space-between;
-  grid-template-rows: 3fr 1fr;
-  background-color: #FFFFFF;
-  padding: 12px 8px 12px 12px;
-  border-radius: 12px;  */
-/* }
-.notification-scan-image {
-  height: 100%;
-  width: 100%;
-  border: 1px solid #e3decb;
-  border-radius: 22px;
-  position: relative;
-}
-.notification-scan-image-lines {
-  position: absolute;
-  align-items: center;
-  height: 5px;
-  width: 20px;
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 0.5px;
-  right: 10px;
-  bottom: 20px;
-}
-.notification-scan-image-line1{
-  background-color: #223929;
-}  */
 
 .notification-scan {
     display: grid;
@@ -858,6 +827,12 @@ body {
     color: #223929;
     white-space: nowrap;
 }
+@media screen and (max-width: 1045px) {
+  .section {
+    grid-template-columns: 1fr;
+    padding: 0px 15px 40px 15px;
+  }
+}
 .footer {
   background-color: #223929;
   color: white;
@@ -894,6 +869,54 @@ body {
   height: 42px;
 }
 .footer-border{
-  border: 1px solid #3A5040;
-  margin-top: 30px;
+  display: block;
+  width: 97%;
+  border-top: 1px solid #3A5040; /* Changed from border to border-top for a cleaner line */
+  margin: 0 20px;
+}
+.footer-links{
+  display: flex;
+  gap: 70px;
+  padding-top: 30px;
+  flex-direction: rows;
+}
+.footer-links-1 > a{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  color: #E9EBDF;
+  font-weight: 400;
+  font-size: 12.5px;
+}
+.footer-title{
+  font-size: 10px;
+  color: #8E9C8C;
+  font-weight: 400;
+  padding-bottom: 7px;
+}
+.footer-links-2 > a{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #E9EBDF;
+  font-weight: 400;
+  font-size: 12.5px;
+}
+.footer-links-3 > a{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #E9EBDF;
+  font-weight: 400;
+  font-size: 12.5px;
+}
+.footer-socials {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;            
+  box-sizing: border-box; 
+  padding: 20px;           
 }
