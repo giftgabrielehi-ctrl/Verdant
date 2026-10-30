@@ -715,6 +715,14 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 }
+@media screen and (max-width: 390px) {
+.discounts-container {
+  padding: 10px, 10px;
+}
+.discounts-content-3{
+  padding-top: 20px;
+}
+}
 .notification-content > h2{
   font-family: "Source Serif 4", serif;
   font-size: 27px;
@@ -851,6 +859,7 @@ body {
 @media screen and (max-width: 434px) {
   .notifications{
     padding :20px 10px;
+    gap: 0;
   }
    .notification-content > h2{
     font-size: 23px;
