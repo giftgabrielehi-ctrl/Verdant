@@ -905,7 +905,7 @@ body {
 .footer-links{
   display: flex;
   gap: 70px;
-  padding-top: 30px;
+  padding-top: 0px;
   flex-direction: rows;
 }
 .footer-links-1 > a{
@@ -960,5 +960,11 @@ body {
   .footer-1{
     display: grid;
     grid-template-columns: 12fr;
+  }
+}
+@media screen and (max-width: 471px) {
+  .footer-links{
+    gap: 20px;
+    padding-top: 30px;
   }
 }
